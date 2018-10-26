@@ -9,6 +9,8 @@ orig = (HOST, PORT)
 tcp.bind(orig)
 tcp.listen(1)
 
+print(tcp.getsockname())
+
 
 while True:
     con, cliente = tcp.accept()
